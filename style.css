@@ -27,7 +27,7 @@ html {
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 70%;
+    height: 99%;
     width: 100%;
     z-index: -1;
     opacity: 0.4;
@@ -35,13 +35,11 @@ html {
 }
 
 /* Navigation Bar: Logo and image */
-#logo {
-    margin: 25px 32px;
-}
 
 #logo img {
-    height: 75px;
-    margin: 25px 32px;
+    height: 62px;
+    width: 50px;
+    margin: 5px 23px;
 }
 
 /* Navigation Bar: List Styling */
@@ -156,7 +154,7 @@ html {
 }
 
 .C-review {
-    border: 1px solid red;
+    border: 1px solid rgb(49, 48, 48);
     font-size: 25px;
     font-weight: bolder;
     padding: 34px;
@@ -212,7 +210,7 @@ footer {
 /* Utility Classes */
 .h-primary {
     font-size: 3.8rem;
-    padding: 12px;
+    padding: 25px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -237,14 +235,10 @@ footer {
     text-align: center;
 }
 
-/* Navigation */
-#navbar {
-    flex-direction: column;
-}
 
 #navbar ul li a {
-    font-size: 1rem;
-    padding: 0px 7px;
+    font-size: 1.5rem;
+    padding: 0px 103px;
     padding-bottom: 8px;
 }
 
@@ -300,24 +294,33 @@ footer {
 .btn {
     font-size: 18px;
     padding: 4px 8px;
-} 
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 #myButton {
     font-size: 22px;
-    margin-left: 403px;
+    /* margin-left: 280px; */
     cursor: pointer;
     color: white;
     background-color: rgb(101, 57, 57);
     border-radius: 8px;
+
 }
 
-#myButton:hover{
+#myButton:hover {
     font-size: 23px;
-background-color: rgb(210, 83, 83);
+    background-color: rgb(210, 83, 83);
 }
 
 
 @media screen and (max-width: 1400px) {
+
     /* Navigation Bar */
     #logo img {
         height: 50px;
@@ -382,34 +385,66 @@ background-color: rgb(210, 83, 83);
 
 
 @media screen and (max-width: 750px) {
+
     /* Navigation Bar */
     #logo img {
-        height: 40px;
+        height: 54px;
+    }
+
+    #navbar{
+        width: 130%;
     }
 
     #navbar ul li a {
         padding: 3px 8px;
+        font-size: 1.3rem;
     }
 
+
     /* Home Section */
+
+    
+    #home {
+        padding: 32px;
+        margin: 14px -14px;
+        width: 576px;
+        height: 85px;
+    }
+    
     #home::before {
         height: 200px;
     }
 
     /* Services Section */
     #services .box {
-        padding: 15px;
-        margin: 15px 5px;
+        padding: 83px;
+        margin: 8px -20px;
+        height: 416px;
+        width: 443px;
     }
 
     /* Customor Review */
+
+    #customor-review {
+        margin: 24px 27px;
+        
+    }
+
     .C-review {
-        padding: 15px;
-        margin: 15px 5px;
-        font-size: 0.9rem;
+        padding: 16px;
+        margin: 12px 4px;
+        font-size: 12px;
+        width: 13%;
+        height: 137px;
+  
     }
 
     /* Contact Section */
+    #contact {
+        padding: 11px;
+        width: 579px;
+    }
+
     #contact-box form {
         width: 100%;
     }
@@ -417,7 +452,7 @@ background-color: rgb(210, 83, 83);
     /* Footer */
     footer {
         padding: 8px 15px;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     /* Utility Classes */
@@ -438,34 +473,65 @@ background-color: rgb(210, 83, 83);
 
 
 @media screen and (max-width: 400px) {
+
     /* Navigation Bar */
     #logo img {
-        height: 30px;
+        height: 48px;
+    }
+
+    #navbar {
+        width: 122%;
+        background-color: black;
+  
     }
 
     #navbar ul li a {
         padding: 2px 5px;
+        font-size: 1rem;
+
     }
 
     /* Home Section */
-    #home::before {
-        height: 150px;
+    #home {
+        padding: 22px;
+        margin: 14px -14px;
+        width: 337px;
+        height: 98px;
     }
+
 
     /* Services Section */
     #services .box {
-        padding: 10px;
-        margin: 10px 0;
+        padding: 6px;
+        margin: 16px -19px;
+        height: 412px;
+        width: 442px;
     }
 
     /* Customor Review */
+
+    #customor-review {
+        padding: 45px;
+        margin: 8px -28px;
+        gap: 3px;
+    }
     .C-review {
         padding: 10px;
-        margin: 10px 0;
-        font-size: 0.8rem;
+        margin: 9px 3px;
+        font-size: 12px;
+        width: 30%;
+        height: 133px;
+       
+
     }
 
     /* Contact Section */
+
+    #contact {
+        padding: 10px;
+        width: 450px;
+    }
+
     #contact-box form {
         width: 80%;
     }
@@ -473,7 +539,8 @@ background-color: rgb(210, 83, 83);
     /* Footer */
     footer {
         padding: 5px 10px;
-        font-size: 0.7rem;
+        font-size: 1rem;
+        width: 458px;
     }
 
     /* Utility Classes */
@@ -490,4 +557,3 @@ background-color: rgb(210, 83, 83);
         padding: 5px 10px;
     }
 }
-

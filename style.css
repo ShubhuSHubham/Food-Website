@@ -298,7 +298,7 @@ footer {
 }
 
 .btn {
-    font-size: 13px;
+    font-size: 18px;
     padding: 4px 8px;
 } 
 
@@ -467,7 +467,7 @@ background-color: rgb(210, 83, 83);
 
     /* Contact Section */
     #contact-box form {
-        width: 100%;
+        width: 80%;
     }
 
     /* Footer */
